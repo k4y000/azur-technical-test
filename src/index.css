@@ -1,0 +1,70 @@
+
+  .feed {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .post {
+    background-color: #e0e5ec;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 7px 7px 15px #b8b9be, -7px -7px 15px #ffffff;
+  }
+  
+  .post__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post__profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+  }
+  
+  .post__username {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Content and Image Style */
+  .post__content {
+    margin: 15px 0;
+  }
+  
+  .post__image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+  }
+  
+  .post__footer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post__reaction {
+    margin-right: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+    background-color: #e0e5ec;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .post__comment-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #ffffff;
+    background-color: #e0e5ec;
+  }
+  
