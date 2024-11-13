@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "profileImage": "portrait1.jpeg",
+      "name": "Alice Dupont",
+      "postImage": "paysage1.jpeg",
+      "text": "Trop bien ici, enfin du repos ! Les vacances sont bien méritées.",
+      "likes": 120,
+      "comments": [
+        {
+          "user": "Jean",
+          "comment": "Ça a l'air super, profite bien !"
+        },
+        {
+          "user": "Marie",
+          "comment": "Je rêve d'être à ta place !"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "profileImage": "portrait2.jpeg",
+      "name": "Pierre Martin",
+      "postImage": "paysage2.jpeg",
+      "text": "Plage, soleil et détente, la vie est belle ici !",
+      "likes": 89,
+      "comments": [
+        {
+          "user": "Lucie",
+          "comment": "Il fait chaud là-bas !"
+        },
+        {
+          "user": "Marc",
+          "comment": "Vivement les vacances pour moi aussi."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "profileImage": "portrait3.jpeg",
+      "name": "Claire Moreau",
+      "postImage": "paysage3.jpeg",
+      "text": "Un vrai petit coin de paradis, tout ce dont j'avais besoin !",
+      "likes": 200,
+      "comments": [
+        {
+          "user": "Sophie",
+          "comment": "Magnifique ! Tu dois être bien là."
+        },
+        {
+          "user": "David",
+          "comment": "Tu as bien raison, profite à fond !"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "profileImage": "portrait4.jpeg",
+      "name": "David Leclerc",
+      "postImage": "paysage4.jpeg",
+      "text": "Entre randonnée et repos, ces vacances sont parfaites !",
+      "likes": 135,
+      "comments": [
+        {
+          "user": "Nathalie",
+          "comment": "Ça a l'air top ! Il y a des coins sympas là-bas."
+        },
+        {
+          "user": "Bernard",
+          "comment": "Les vacances à la montagne, un vrai bonheur !"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "profileImage": "portrait5.jpeg",
+      "name": "Marc Lefevre",
+      "postImage": "paysage5.jpeg",
+      "text": "Petite escapade en bord de mer, un vrai dépaysement.",
+      "likes": 75,
+      "comments": [
+        {
+          "user": "Isabelle",
+          "comment": "Tu as bien fait de partir en vacances !"
+        },
+        {
+          "user": "Paul",
+          "comment": "Profite bien du soleil, ça fait rêver."
+        }
+      ]
+    }
+  ]
+  

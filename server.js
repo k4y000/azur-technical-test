@@ -1,18 +1,31 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+
 
 const app = express();
 const port = 3000;
 
+app.use(express.static(path.join(__dirname, 'src')));
+
 app.use(express.static(path.join(__dirname, 'assets')));
-app.use(express.static(path.join(__dirname, 'css')));
-app.use(express.static(path.join(__dirname, 'js')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'src', 'index.html'));
 });
+
+app.get('/api/feeds', (req, res) => {
+    fs.readFile(path.join(__dirname, 'mocks', 'feeds.json'), 'utf8', (err, data) => {
+      if (err) {
+        res.status(500).json({ error: 'C\'est cassé pour feeds.json' });
+        return;
+      }
+      res.json(JSON.parse(data));
+    });
+  });
+  
 
 // Démarrage du serveur
 app.listen(port, () => {
-  console.log(`Serveur lancé sur http://localhost:${port}`);
+  console.log(`http://localhost:${port}`);
 });
