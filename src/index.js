@@ -1,6 +1,6 @@
 import { displayFeeds } from "./modules/feed.js";
 
-async function fetchFeeds() {
+async function fetchFeeds(callback) {
     try {
       const response = await fetch('http://localhost:3000/api/feeds');
       
@@ -9,17 +9,17 @@ async function fetchFeeds() {
       }
       
       const data = await response.json();
-      console.log('Données récupérées :', data);
+      callback(data);
       
-      displayFeeds(data);
     } catch (error) {
       console.error('Erreur lors de la récupération des feeds :', error);
+      return error
     }
 }
   
 document.addEventListener('DOMContentLoaded', async () => {
     // retrieve feeds
-    await fetchFeeds();
+    await fetchFeeds(displayFeeds);
 
     //init "like" feature
     const { addLikeListeners } = await import('./modules/like.js');
