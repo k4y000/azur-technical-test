@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Réseau Social - Feed</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/pages/chat/index.css" />
+  <script defer type="module"  src="/pages/chat/index.js"></script>
+</head>
+<body>
+  <main class="chat">
+    <div class="chat__sidebar">
+        <div class="chat__sidebar-header">Conversations</div>
+        <ul class="chat__conversation-list" id="conversationList">
+            <!-- List of conversations will appear here dynamically -->
+        </ul>
+    </div>
+
+    <div class="chat__message-container">
+        <div class="chat__header" id="chatHeader">Select a Conversation</div>
+        <div class="chat__messages" id="messages">
+            <!-- Messages will appear here dynamically -->
+        </div>
+        <div class="chat__input">
+            <input type="text" class="chat__input-text" id="messageInput" placeholder="Type a message..." />
+            <button class="chat__input-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
