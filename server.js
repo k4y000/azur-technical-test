@@ -10,8 +10,13 @@ app.use(express.static(path.join(__dirname, 'src')));
 
 app.use(express.static(path.join(__dirname, 'assets')));
 
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'src', 'index.html'));
+});
+
+app.get('/messages', (req, res) => {
+    res.sendFile(path.join(__dirname, 'src/pages/chat', 'index.html'));
 });
 
 app.get('/api/feeds', (req, res) => {
@@ -23,6 +28,17 @@ app.get('/api/feeds', (req, res) => {
       res.json(JSON.parse(data));
     });
   });
+
+
+app.get('/api/messages', (req, res) => {
+    fs.readFile(path.join(__dirname, 'mocks', 'messages.json'), 'utf8', (err, data) => {
+        if (err) {
+        res.status(500).json({ error: 'C\'est cassé pour messages.json' });
+        return;
+        }
+        res.json(JSON.parse(data));
+    });
+});
   
 
 // Démarrage du serveur
