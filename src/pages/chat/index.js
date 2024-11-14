@@ -27,6 +27,7 @@ async function displayMessages() {
     data?.conversations?.forEach(conversation => {
         const lastMessage = conversation.messages[conversation.messages.length - 1];
         const messageElement = document.createElement("div");
+        messageElement.dataset.conversationId = conversation.id;
         messageElement.classList.add("chat__message");
 
         messageElement.innerHTML = `
@@ -36,7 +37,13 @@ async function displayMessages() {
             </div>
         `;
         messagesContainer.appendChild(messageElement);
+
+        messageElement.addEventListener('click', loadConversation);
     });
+}
+
+function loadConversation(event) {
+    console.log(event.currentTarget.dataset.conversationId)
 }
 
 displayMessages();
