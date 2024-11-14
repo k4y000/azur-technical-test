@@ -3,6 +3,9 @@
 
 Technical test
 
+http://localhost:3000/
+http://localhost:3000/messages
+
 ## Installation
 
 To get started, you need to clone this repository and install the dependencies.
