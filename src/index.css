@@ -68,3 +68,24 @@
     background-color: #e0e5ec;
   }
   
+
+  /* Like Feature */
+  .like-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.1s;
+  }
+  
+  .like-button .like-count {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pop-animation {
+    transform: scale(1.3); /* Agrandissement temporaire du bouton */
+    transition: transform 0.1s ease-out;
+  }
+  
