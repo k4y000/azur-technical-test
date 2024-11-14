@@ -1,5 +1,5 @@
-import { displayFeeds } from "./modules/feed.js";
-import { addCommentForm } from "./modules/comment.js";
+import { displayFeeds } from "./modules/feed.js"
+import { addCommentForm } from "./modules/comment.js"
 
 async function fetchFeeds(callback) {
     try {
@@ -31,5 +31,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     //init comment feature
     addCommentForm()
+
+    //init full screen image
+    const { openModal } = await import("./modules/modal-image.js");
+    const images = document.querySelectorAll('[data-thumbnail-image]');
+    images.forEach((image) => {
+        image.addEventListener('click', () => {
+            openModal(image.src); 
+        });
+    });
+  
 });   
   
