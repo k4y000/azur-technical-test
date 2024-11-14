@@ -19,9 +19,7 @@ export function displayFeeds(feeds) {
             <button class="like-button" data-likes="${feed.likes}">
             👍 <span class="like-count">${feed.likes}</span>
             </button>
-            <input type="text" placeholder="Commenter..." class="post__comment-input" />
             </div>
-
             <div class="comments">
                 ${feed.comments.map(comment => `
                     <div class="comment">

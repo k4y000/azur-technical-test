@@ -1,4 +1,5 @@
 import { displayFeeds } from "./modules/feed.js";
+import { addCommentForm } from "./modules/comment.js";
 
 async function fetchFeeds(callback) {
     try {
@@ -27,5 +28,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     likeButtons.forEach(button => {
         button.addEventListener('click', addLikeListeners);
     });
+
+    //init comment feature
+    addCommentForm()
 });   
   
