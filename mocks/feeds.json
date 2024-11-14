@@ -6,6 +6,8 @@
       "postImage": "paysage1.jpeg",
       "text": "Trop bien ici, enfin du repos ! Les vacances sont bien méritées.",
       "likes": 120,
+      "dislikes": 34,
+      "loves": 40,
       "comments": [
         {
           "user": "Jean",
@@ -24,6 +26,8 @@
       "postImage": "",
       "text": "Plage, soleil et détente, la vie est belle ici !",
       "likes": 89,
+      "dislikes": 0,
+      "loves": 12,
       "comments": [
         {
           "user": "Lucie",
@@ -41,7 +45,9 @@
       "name": "Claire Moreau",
       "postImage": "paysage3.jpeg",
       "text": "Un vrai petit coin de paradis, tout ce dont j'avais besoin !",
-      "likes": 200,
+      "likes": 0,
+      "dislikes": 1,
+      "loves": 2,
       "comments": [
         {
           "user": "Sophie",
@@ -60,6 +66,8 @@
       "postImage": "paysage4.jpeg",
       "text": "Entre randonnée et repos, ces vacances sont parfaites !",
       "likes": 135,
+      "dislikes": 1,
+      "loves": 20,
       "comments": [
         {
           "user": "Nathalie",
@@ -78,6 +86,8 @@
       "postImage": "paysage5.jpeg",
       "text": "Petite escapade en bord de mer, un vrai dépaysement.",
       "likes": 75,
+      "dislikes": 13,
+      "loves": 29,
       "comments": [
         {
           "user": "Isabelle",

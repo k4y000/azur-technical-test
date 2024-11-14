@@ -18,6 +18,12 @@ export function displayFeeds(feeds) {
               <button class="like-button" data-likes="${feed.likes}">
                   👍 <span class="like-count">${feed.likes}</span>
               </button>
+              <button class="like-button" data-likes="${feed.dislikes}">
+                  👎 <span class="like-count">${feed.dislikes}</span>
+              </button>
+              <button class="like-button" data-likes="${feed.loves}">
+                  🥰 <span class="like-count">${feed.loves}</span>
+              </button>
           </div>
           <div class="comments">
               ${feed.comments.map(comment => `
